@@ -1,0 +1,35 @@
+﻿html, body {
+    height:100%;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size:12px;
+}
+
+.container {
+    width:80%;
+    min-height:100%;
+    padding:20px;
+    margin:0 auto;
+    background-color: rgba(8, 8, 8, 0.02);}
+
+h4 {
+    border-bottom:1px solid #ddd;
+}
+
+.text-center {
+    text-align:center;
+}
+
+xmp {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+
+table {
+    border-collapse:collapse;
+}
+table th, table td {
+    padding:3px 5px;
+}
