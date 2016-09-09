@@ -75,4 +75,30 @@ $(function () {
             this.parent().prev().text(currentPage);
         }
     });
+
+
+    $("#paging9").xjzPagination({
+        totalPages: 20,
+        visiblePages: 7,
+        startPage: 7,
+        first: '<<',
+        prev: '<',
+        next: '>',
+        last: '>>',
+        pagingType: 'full_numbers',
+        onPageClick: function (currentPage) {
+            this.parent().prev().text(currentPage);
+        }
+    });
+
+
+    $("#paging10").xjzPagination({
+        totalPages: 20,
+        visiblePages: 7,
+        startPage: 7,
+        pagingType: 'full_numbers',
+        onPageClick: function (currentPage) {
+            this.parent().prev().text(currentPage);
+        }
+    });
 });
