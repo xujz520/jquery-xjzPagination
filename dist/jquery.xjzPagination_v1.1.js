@@ -209,7 +209,7 @@
         update: function (_totalPages, _currentPage) {
             var me = this;
             //在不是静态分页的情况下, 总页数发生变化或总页数等于0, 才进行重新分页
-            if ((me.totalPages != _totalPages || _totalPages == 0 || !_currentPage) && me.options.totalPages === null) {
+            if ((me.totalPages != _totalPages || _totalPages == 0 || _currentPage != undefined) && me.options.totalPages === null) {
                 me.totalPages = _totalPages;
                 //当initiateStartPageClick=false, 且需要手动加载数据时, 需要给该方法传递当前页数
                 if (_currentPage) {

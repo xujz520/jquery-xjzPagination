@@ -83,7 +83,8 @@
 
                 //更新分页
                 var totalPages = Math.ceil(data.total / limit);     //上舍
-                pagin.update(totalPages);   //$("#xjzPagination").data("xjzPagination").update(totalPages);
+                pagin.update(totalPages, currentPage);
+                //$("#xjzPagination").data("xjzPagination").update(totalPages);
                 
             }
         }, 'json');
