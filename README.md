@@ -1,5 +1,5 @@
 #jQuery-xjzPagination 
-一个简单易用的分页插件.
+一个简单易用的分页插件。
 
 演示地址:http://null_720_0252.oschina.io/jquery-xjzpagination/docs/
 
