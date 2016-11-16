@@ -1,9 +1,9 @@
 #jQuery-xjzPagination 
 一个简单易用的分页插件.
 
-演示地址:https://git.oschina.net/null_720_0252/jquery-xjzPagination/docs/
+演示地址:http://null_720_0252.oschina.io/jquery-xjzpagination/docs/
 
-![输入图片说明](https://git.oschina.net/null_720_0252/jquery-xjzPagination/docs/assets/img/img.png "在这里输入图片标题")
+![输入图片说明](http://null_720_0252.oschina.io/jquery-xjzpagination/docs/assets/img/img.png "在这里输入图片标题")
 
 
 特点：
