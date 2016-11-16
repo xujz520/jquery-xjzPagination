@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery-xjzPagination | 分页插件</title>
+
+    <link href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="assets/jquery-1.9.1.js"></script>
+    <script src="../dist/jquery.xjzPagination.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <br />
+        <div class="text-center">
+            <ul id="xjzPagination" class="pagination"></ul>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $("#xjzPagination").xjzPagination({
+                totalPages: 20,
+                onPageClick: function (currentPage) {
+                    console.log(currentPage);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

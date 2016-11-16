@@ -1,0 +1,188 @@
+﻿* {
+    outline: none !important;
+}
+html, body {
+    min-height:100%;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-size:14px;
+}
+
+h4 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+table {
+    border-collapse:collapse;
+}
+table th, table td {
+    padding:3px 5px;
+}
+
+.syntaxhighlighter {
+    border: 1px solid green;
+    overflow-y: hidden!important;
+}
+
+.syntaxhighlighter .line.alt1 {
+    background-color: rgb(248, 248, 248)!important;
+}
+
+.container {
+    width: 80%;
+    min-height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.99);
+    box-shadow: 0 0 20px #ddd;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.img {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.Table {
+    border-collapse:collapse;
+    border:#6f6f6f 1px solid;
+}
+.Table td,.Table th {
+    border:#6f6f6f 1px solid;
+    padding:3px;
+}
+.Table>tbody>tr:nth-of-type(even) {
+    background-color: #f8f8f8;
+}
+.Table>tbody>tr:first-child {
+    background-color: #c7ddf4;
+    font-weight: bold;
+}
+
+@keyframes xjzAnimation
+{
+	0%   {left:0px;}
+	20%   {transform: rotate(20deg);}
+	80%   {transform: rotate(0deg);}
+	100% {left:800px;}
+}
+
+.xjz {
+    padding: 5px;
+    border: 1px solid green;
+    position:relative;
+    animation:xjzAnimation 2s 2 alternate;
+    animation-delay: 3s;
+}
+
+
+
+/*css3分页按钮过渡效果
+------------------------------------------------------------------*/
+/*命名空间*/
+.paging-transition {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+/*内联 浮动 相对定位 最小宽度 固定高度*/
+.paging-transition li {
+    display: inline-block;
+    float: left;
+    min-width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: #ddd;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.paging-transition li:last-child {
+    margin-right: 0;
+}
+.paging-transition li a {
+    line-height: 30px;
+    text-decoration: none;
+    color: #000;
+    z-index: 2;
+    position: relative;
+    font-size: 16px;
+    font-family: 宋体;
+    background-color: transparent;
+}
+/*更多页...*/
+.paging-transition li.more a {
+    line-height: 22px;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+.paging-transition li.first a, .paging-transition li.prev a,.paging-transition li.last a, .paging-transition li.next a {
+    padding: 0 7px;
+}
+/*过渡层*/
+.paging-transition li:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    background-color: #1DA8F9;
+    transition: 0.4s;
+}
+/*首页 上一页 过渡层 从右到左*/
+.paging-transition li.first:after, .paging-transition li.prev:after {
+    right: 0;
+    height: 100%;
+    width: 0;
+    transition: 0s;
+}
+/*尾页 下一页 过渡层 从左到右*/
+.paging-transition li.last:after, .paging-transition li.next:after {
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: 0s;
+}
+.paging-transition li:hover a {
+    color: #FFF;
+    transition: 0.4s;
+}
+.paging-transition li:hover:after{
+    height:100%;
+}
+.paging-transition li.first:hover:after, .paging-transition li.prev:hover:after {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.paging-transition li.last:hover:after, .paging-transition li.next:hover:after {
+    width: 100%;
+    transition: 0.4s;
+}
+/*激活页*/
+.paging-transition li.active:after {
+    height:100%;
+    width:100%;
+}
+.paging-transition li.active a{
+    color:#FFF;
+}
+/*禁用页*/
+.paging-transition li.disabled,.paging-transition li.disabled a {
+    cursor:no-drop;
+}
+.paging-transition li.disabled:after {
+    height: 0;
+    width: 0;
+}
+.paging-transition li.disabled a {
+    color: #FFF;
+    font-weight: bold;
+}
